@@ -96,3 +96,8 @@ str_echo (int connfd) {
 
     return;
 }
+
+// Ausgabe
+/*
+  c) Funktioniert nicht, Ausgabe gleich wie in der Teilaufgabe a)
+*/
