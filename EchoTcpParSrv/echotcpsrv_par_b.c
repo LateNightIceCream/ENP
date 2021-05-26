@@ -110,3 +110,44 @@ str_echo (int connfd) {
 
     return;
 }
+
+//------------------------------------------------------------------------------
+// Ausgabe
+// Nach Starten zweier Clients
+/*
+----------------------
+New Client Connection!
+----------------------
+ps:
+    PID TTY          TIME CMD
+   6716 pts/0    00:00:00 bash
+   7254 pts/0    00:00:00 srv2
+   7256 pts/0    00:00:00 srv2
+   7257 pts/0    00:00:00 ps
+----------------------
+New Client Connection!
+----------------------
+ps:
+    PID TTY          TIME CMD
+   6716 pts/0    00:00:00 bash
+   7254 pts/0    00:00:00 srv2
+   7256 pts/0    00:00:00 srv2
+   7259 pts/0    00:00:00 srv2
+   7260 pts/0    00:00:00 ps
+*/
+
+// Nach Beenden und Neustart eines Clients
+/*
+----------------------
+New Client Connection!
+----------------------
+ps:
+    PID TTY          TIME CMD
+   6716 pts/0    00:00:00 bash
+   7254 pts/0    00:00:00 srv2
+   7259 pts/0    00:00:00 srv2
+   7318 pts/0    00:00:00 srv2
+   7319 pts/0    00:00:00 ps
+  */
+// --> genau 3 srv2 Prozesse... Server parent und 2x client child
+// --> kein Zombieprozess!

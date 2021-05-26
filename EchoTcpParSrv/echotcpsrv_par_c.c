@@ -98,6 +98,43 @@ str_echo (int connfd) {
 }
 
 // Ausgabe
+// Nach Starten zweier Clients
 /*
-  c) Funktioniert nicht, Ausgabe gleich wie in der Teilaufgabe a)
+----------------------
+New Client Connection!
+----------------------
+ps:
+    PID TTY          TIME CMD
+   6716 pts/0    00:00:00 bash
+   7452 pts/0    00:00:00 srv3
+   7458 pts/0    00:00:00 srv3
+   7459 pts/0    00:00:00 ps
+----------------------
+New Client Connection!
+----------------------
+ps:
+    PID TTY          TIME CMD
+   6716 pts/0    00:00:00 bash
+   7452 pts/0    00:00:00 srv3
+   7458 pts/0    00:00:00 srv3
+   7462 pts/0    00:00:00 srv3
+   7463 pts/0    00:00:00 ps
 */
+
+// Nach Beenden und Neustart eines Clients
+/*
+----------------------
+New Client Connection!
+----------------------
+ps:
+    PID TTY          TIME CMD
+   6716 pts/0    00:00:00 bash
+   7452 pts/0    00:00:00 srv3
+   7458 pts/0    00:00:00 srv3
+   7554 pts/0    00:00:00 srv3
+   7555 pts/0    00:00:00 ps
+*/
+// --> genau 3 srv2 Prozesse... Server parent und 2x client child
+// --> kein Zombieprozess!
+// --> Methode mit signal(SIGCHLD, SIG_IGN) funktioniert also auch
+//     auf meinem System

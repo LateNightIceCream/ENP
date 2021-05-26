@@ -1,0 +1,12 @@
+(TeX-add-style-hook
+ "apl"
+ (lambda ()
+   (TeX-add-to-alist 'LaTeX-provided-class-options
+                     '(("article" "11pt" "a4paper")))
+   (TeX-run-style-hooks
+    "latex2e"
+    "\"/home/zamza/Documents/HS/Notes Template/preamble"
+    "article"
+    "art11"))
+ :latex)
+

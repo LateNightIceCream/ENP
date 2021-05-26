@@ -95,3 +95,45 @@ str_echo (int connfd) {
 
     return;
 }
+
+// Ausgabe
+// Nach starten zweier Clients:
+
+/*
+----------------------
+New Client Connection!
+----------------------
+ps:
+    PID TTY          TIME CMD
+   6716 pts/0    00:00:00 bash
+   6761 pts/0    00:00:00 srv1
+   6818 pts/0    00:00:00 srv1
+   6819 pts/0    00:00:00 ps
+----------------------
+New Client Connection!
+----------------------
+ps:
+    PID TTY          TIME CMD
+   6716 pts/0    00:00:00 bash
+   6761 pts/0    00:00:00 srv1
+   6818 pts/0    00:00:00 srv1
+   6900 pts/0    00:00:00 srv1
+   6901 pts/0    00:00:00 ps
+*/
+
+// Nach Beenden und Neustart eines Clients
+/*
+----------------------
+New Client Connection!
+----------------------
+ps:
+    PID TTY          TIME CMD
+   6716 pts/0    00:00:00 bash
+   6761 pts/0    00:00:00 srv1
+   6818 pts/0    00:00:00 srv1
+   6900 pts/0    00:00:00 srv1 <defunct>
+   6965 pts/0    00:00:00 srv1
+   6966 pts/0    00:00:00 ps
+*/
+
+// --> defunct... Zombie Prozess!
