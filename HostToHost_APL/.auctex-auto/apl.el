@@ -11,9 +11,14 @@
    (TeX-add-symbols
     '("code" 1))
    (LaTeX-add-labels
+    "beep"
     "gwin"
     "glin"
     "forv"
+    "fwconfig1"
+    "fwconfig2"
+    "fwdoof"
+    "fwdoof2"
     "fwaus"))
  :latex)
 

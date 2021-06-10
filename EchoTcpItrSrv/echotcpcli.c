@@ -1,4 +1,5 @@
 #include "echotcp_common.h"
+#include <stdlib.h>
 
 #define DEFAULT_DEST_PORT 0xDEAF
 #define DEFAULT_DEST_ADDR "127.0.0.1"
@@ -25,9 +26,9 @@ str_cli (int sockfd) {
         printf("Received:\t%s\n", recvline);
 
         // ASCII-Code zum Test ausgeben
-        for (unsigned long i = 0; i <= strlen(recvline); i++) {
-            printf("Received:\t%d\n", recvline[i]);
-        }
+        /* for (unsigned long i = 0; i <= strlen(recvline); i++) { */
+        /*     printf("Received:\t%d\n", recvline[i]); */
+        /* } */
     }
 }
 
