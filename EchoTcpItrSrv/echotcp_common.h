@@ -12,7 +12,7 @@
 #define SA    struct sockaddr
 #define SA_IN struct sockaddr_in
 
-#define MAXLINE 10
+#define MAXLINE 10000
 
 #define ERR_N_DIE(ERR_STR) if(errno) {perror(ERR_STR); exit(EXIT_FAILURE);}
 

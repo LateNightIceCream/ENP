@@ -7,6 +7,13 @@
     "latex2e"
     "\"/home/zamza/Documents/HS/Notes Template/preamble"
     "article"
-    "art11"))
+    "art11")
+   (TeX-add-symbols
+    '("code" 1))
+   (LaTeX-add-labels
+    "gwin"
+    "glin"
+    "forv"
+    "fwaus"))
  :latex)
 

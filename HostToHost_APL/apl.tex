@@ -2,19 +2,101 @@
 
 \input{"/home/zamza/Documents/HS/Notes Template/preamble.tex"}
 
+\newcommand{\code}[1]{#1}
+
 \begin{document}
 
 \begin{center}
-  \Large{TITLE}
+  \Large{Host-to-Host-Kommunikation im Rahmen der Netzwerkprogrammierung und Untersuchung der maximalen TCP-Segmentgröße}
 \end{center}
 
 \begin{flushright}
   R. Grünert\\
+  S. Klobe\\
   \today
 \end{flushright}
 
-\section{}
+Zur erfolgreichen Kommunikation zwischen zwei Hosts mit z. B. \code{echotcp} bzw. \code{daytimetcp} bedarf es mehrerer Schritte
+zur Konfiguration.
 
+\section{IPv4 Adresszuweisung}
+
+Da im Modul ENP die Netzwerkkommunikation auf
+Schicht 3 über IPv4 gelehrt wird, benötigt zumindest der Server-Host
+eine solche öffentliche Adresse. Da man heutzutage bei den meisten
+Providern mit \emph{Dual Stack Lite} (DS-Lite) angebunden wird und
+daher nur eine IPv6-Adresse erhält, ist in diesem Fall eine Anfrage beim Provider nötig, um eine IPv4 Adresse zugewiesen zu bekommen.
+Im Falle unseres Providers (Vodafone) erfolgte dies durch einen einfachen Anruf.\\
+
+Gelingt keine IPv4-Zuweisung, bleiben nur Ausweichmöglichkeiten, wie z. B. VPN-Verbindung beider Netzwerke.\\
+
+Mithilfe einer Website zur Ermittlung der eigenen öffentlichen IP-Adresse kann im vorher-nachher-Vergleich die Zuweisung überprüft werden \footnote{z. B. mit https://www.whatismyip.com/}.
+
+
+\section{Port-Forwarding}
+Aus Sicht des inside-global Netzwerkes gibt es noch keine Möglichkeit,
+um den Server von anderen Hosts im Heimnetzwerk zu unterscheiden.
+Der Router sollte daher so konfiguriert werden, dass er den Traffic,
+der an den Port des Servers gerichtet ist auch an den Server
+weiterleitet (Port-Forwarding).
+
+\subsection{Ermittlung der Router-IP-Adresse}
+Über das Webinterface des Routers kann man das Port-Forwarding einstellen. Um die lokale IP-Adresse des
+Routers zum Erreichen des Webinterfaces herauszufinden, gibt es betriebssystemabhängig verschiedene Möglichkeiten.
+
+\paragraph{Router-IP unter Windows}
+Über den CMD-Befehl \code{ipconfig} findet man unter dem Eintrag
+\glqq Default Gateway\grqq bzw \glqq Standardgateway\grqq die gewünschte Routeradresse (Abb. \ref{gwin}).
+
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{graphics/gatewayip_windows}
+\caption{CMD-Ausgabe des ipconfig-Befehls unter Windows}\label{gwin}
+\end{figure}
+
+\paragraph{Router-IP unter Linux}
+Unter Linux kann man den Befehl \code{ip r} oder \code{ip route} nutzen, um die Routeradresse herauszufinden.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.618\textwidth]{graphics/gatewayip_linux}
+\caption{Ausgabe des ipconfig-Befehls unter Linux}\label{glin}
+\end{figure}
+
+
+
+\subsection{Aufruf des Webinterfaces}
+Über die oben ermittelte IP-Adresse kann man im Browser das Webinterface des Routers aufrufen. Das Passwort findet man i.d.R. auf dem Router selbst.
+
+\subsection{Einstellung des Port-Forwardings}
+Die genaue Einstellung des Port-Forwardings unterscheidet sich natürlich je nach Gerät, im allgemeinen müssen dann
+aber nur ein Port(bereich) und eine gewünschte Ziel-IP-Adresse
+angegeben werden. Ein Beispiel ist in Abb. \ref{forv} zu sehen.\\
+
+Die Ziel-IP-Adresse ist die Adresse des Hosts auf dem das Serverprogramm läuft. Man findet sie unter Windows ebenfalls über den \code{ipconfig}-Befehl und unter Linux z.B. über \code{ip a}. Da die Adresszuweisung meist standardmäßig über DHCP stattfindet, sollte darauf geachtet werden, dass sich die beim Port-Forwarding angegebene Adresse ändern und daher eine Neukonfiguration notwendig sein kann.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{graphics/forv}
+\caption{Beispiel für Port-Forwarding Ansicht eines Vodafone-Routers}\label{forv}
+\end{figure}
+
+\section{Firewall}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{graphics/firewall_aus}
+\caption{}\label{fwaus}
+\end{figure}
+
+\section{Virtualbox}
+Da TeilnehmerInnen des Moduls ENP meist eine virtuelle Maschine
+(Oracle Virtualbox) nutzen, um unter Linux zu arbeiten, benötigt man
+diesem Fall zusätzliche Konfiguration unter Virtualbox.
+
+\subsection{Port-Forwarding}
+Möglicherweise bedarf es einem Neustart von Windows.
+
+\section{}
 \begin{itemize}
   \item firewall
   \item virtualbox settings (Netzwerk -> Port Forwarding) ( Neustart? )
@@ -23,5 +105,4 @@
   \item screenshots wie es aussieht wenn was schiefläuft (firewall, nachricht wird abgelehnt, etc)
 \end{itemize}
 
-%\notebox{hey}{\blindtext}
 \end{document}
