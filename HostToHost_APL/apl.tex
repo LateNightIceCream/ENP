@@ -163,10 +163,10 @@ Beispielkonfiguration für den Serverport
 
 \section{Virtualbox}
 Da Teilnehmer*innen des Moduls ENP meist eine virtuelle Maschine
-(Oracle Virtualbox) auf Windows nutzen, um unter Linux zu arbeiten, benötigt man
-in diesem Fall zusätzliche Konfigurationen unter Virtualbox.\\
+(Oracle VirtualBox) auf Windows nutzen, um unter Linux zu arbeiten, benötigt man
+in diesem Fall zusätzliche Konfigurationen unter VirtualBox.\\
 
-Als erstes sollte sichergestellt sein, dass Virtualbox von der Windows-Firewall
+Als erstes sollte sichergestellt sein, dass VirtualBox von der Windows-Firewall
 ins Netzwerk gelassen wird. Dies kann ebenfalls über
 \code{Systemsteuerung} $\rightarrow$ \code{System und Sicherheit}
 $\rightarrow$ \code{Windows Defender Firewall} geprüft werden. Alternativ
@@ -176,7 +176,19 @@ eine Website aufrufen kann.\\
 Weiterhin muss auch hier eine Portweiterleitung eingerichtet werden.
 
 \subsection{Port-Forwarding}
-Hinweis: Möglicherweise bedarf es einem Neustart von Windows.
+
+Die Weiterleitungseinstellungen erreicht man über den \code{Netzwerk}-Tab unter
+den Einstellungen der Virtuellen Maschine. Eine Beispielkonfiguration ist in
+Abb. \ref{vm_port_fw} zu sehen.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{graphics/vm_port_fw}
+\caption{Einstellung der Portweiterleitung unter VirtualBox}\label{vm_port_fw}
+\end{figure}
+
+\textbf{Hinweis}: Möglicherweise bedarf es einem Neustart von Windows oder
+VirtualBox.
 
 \section{Test}
 Nach den oben beschriebenen Schritten kann der erste Test gestartet werden.

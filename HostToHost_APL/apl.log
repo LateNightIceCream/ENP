@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2021.5.30)  10 JUN 2021 19:43
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2021.5.30)  10 JUN 2021 20:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1597,86 +1597,101 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 178.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 178.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 181.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 181.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 181.
-
-Underfull \hbox (badness 10000) in paragraph at lines 182--187
-
- []
-
+File: graphics/vm_port_fw.jpg Graphic file (type bmp)
+<graphics/vm_port_fw.jpg>
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 192.
 Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 192.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 192.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 192.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 192.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 192.
+[5]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 193.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 193.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 193.
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--199
+Underfull \hbox (badness 10000) in paragraph at lines 194--199
+
+ []
+
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 204.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 204.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 204.
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--204
+Underfull \hbox (badness 10000) in paragraph at lines 212--216
 
  []
 
 File: graphics/firewall_doof.png Graphic file (type bmp)
 <graphics/firewall_doof.png>
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 213.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 213.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 213.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 213.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 213.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 213.
-[5]
 File: graphics/firewall_doof_srv.png Graphic file (type bmp)
 <graphics/firewall_doof_srv.png>
 File: graphics/firewall_aus.png Graphic file (type bmp)
 <graphics/firewall_aus.png>
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 240.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 240.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 240.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 237.
+(babel)             in language  on input line 240.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 237.
+(babel)             in language  on input line 240.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 237.
+(babel)             in language  on input line 240.
+[6]
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 237.
+(babel)             in language  on input line 241.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 237.
+(babel)             in language  on input line 241.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 237.
- [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 237.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 237.
+(babel)             in language  on input line 241.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 249.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 249.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 249.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 249.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 249.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 249.
+ [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
  (./apl.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 237.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 237.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 249.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
 Package rerunfilecheck Info: File `apl.out' has not changed.
 (rerunfilecheck)             Checksum: DDDA5E9BF6E177AAD9CA2176E6692AFF.
  ) 
 Here is how much of TeX's memory you used:
- 41795 strings out of 492970
- 850706 string characters out of 6123857
+ 41801 strings out of 492970
+ 850827 string characters out of 6123857
  1004846 words of memory out of 5000000
- 45195 multiletter control sequences out of 15000+600000
+ 45200 multiletter control sequences out of 15000+600000
  540243 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  65i,16n,101p,10450b,1027s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on apl.pdf (6 pages).
+Output written on apl.pdf (7 pages).

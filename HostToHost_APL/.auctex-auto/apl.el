@@ -17,6 +17,7 @@
     "forv"
     "fwconfig1"
     "fwconfig2"
+    "vm_port_fw"
     "fwdoof"
     "fwdoof2"
     "fwaus"))
